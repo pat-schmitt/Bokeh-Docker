@@ -40,7 +40,7 @@ services:
       - "traefik.http.routers.static-app.tls.domains[0].main=${LE_DOMAIN}"
 
   simulator-app:
-    image: "oggm/bokeh:20200403"
+    image: "patschmitt/simulator:20200403"
     container_name: "simulator-app"
     command:
       - "git+https://github.com/OGGM/glacier_simulator.git@a39c2172adcf96da09bdfbc810320c9eac900a73"
